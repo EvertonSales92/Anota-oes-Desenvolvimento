@@ -1,0 +1,40 @@
+
+https://git-scm.com/download/win
+
+###Configuração GIT###
+git config --global user.name "nome"
+git config --global user.email "email"
+git config --global core.editor "code" - Editor de Códiigo Principal.
+
+Consultando - git config code.editor | user.email | user.name
+ Ver tudo - git config --list
+#################################
+
+
+### Adicionando o projeto no Git ###
+
+1 - Dentro da pasta do projeto - git init
+
+git status - Trás a visão atual
+git add  nome_arquivo | all  | .
+
+git commit -m "descricao" -- SALVAR
+##############################################
+
+##### VISUALIZAÇÃO #####
+
+Git Log - Mostra todos os Commits
+
+ git show a19fb3f8a50dc0b4f3ce50f124ad3b11014ceb4d _ Detalhes da onde foi mudado
+
+git diff - Mudanças que terá no próximo Commit - (Muito importante)
+
+##############################################################
+
+########  Desfazendo as coisas ###########
+
+Git checkout - Defaz as mudanças
+git reset HEAD - depois de adicionado você consegue remover
+git reset hard jsdhjjwjf4bbrhsbherhbhbvtr - volta ao commit anterior
+
+Depois do commit - git push -u origin master
