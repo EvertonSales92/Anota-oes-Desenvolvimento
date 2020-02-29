@@ -1,0 +1,65 @@
+
+#### Criar Ambiente virtual ###
+
+$python -m venv myvenv
+--------------------------------
+
+### Ativar Ambiente virtual ###
+\meuenv\Scripts\activate
+--------------------------------
+
+### Instalando o Django ###
+$ pip install django
+--------------------------------
+
+### Iniciando o Projeto ###
+django-admin startproject PrimeiroPrograma .
+--------------------------------
+
+### Executar projeto ###
+python .\manage.py runserver
+--------------------------------
+
+### Criar APPS ###
+python .\manage.py startapp blog
+
+##########################################
+	  Configurando  APPS
+##########################################
+
+1 – No Projeto principal em Sttings.py em INSTALLED_APPS - 'produto.apps.ProdutoConfig',
+  
+2 – Em urls.py  do programa principal:
+ 	from django.contrib import admin
+	from django.urls import path, include
+
+	urlpatterns = [
+    		path('', include('paginas.urls')),
+   		path('admin/', admin.site.urls),
+	]
+
+
+3-  Criar urls.py (APP) colocar as seguintes configurações (EXEMPLO)
+
+	from django.urls import path, include
+
+	urlpatterns = [
+    	path('', include('paginas.urls')),
+    	path('admin/', admin.site.urls),
+]
+
+
+4 – No arquivo views:
+
+from django.shortcuts import render
+
+# Create your views here.
+def index(request):
+    return render(request, 'paginas/index.html')
+
+
+def sobre(request):
+    return render(request, 'paginas/sobre.html')
+
+5 - Dentro de do APP "Paginas" Criar uma pasta chamada Templates, Dentro de Templates criar uma pasta chamada Paginas(OBS: Nome APP), e Dentro da pasta
+pagina criar o HTML.
