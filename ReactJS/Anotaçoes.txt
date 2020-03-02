@@ -1,5 +1,16 @@
+Aprendendo direto da Documentação
+https://pt-br.reactjs.org/docs/components-and-props.html
+
+
+React JS - Criando um App do Zero
+https://www.youtube.com/watch?v=tbLziJchz48
+
 Macoratti
 http://www.macoratti.net/18/09/aspn_react1.htm
 
 CRUD
 https://www.youtube.com/watch?v=NemyDIUcC64
+
+NODE, NPM, Yarn
+1- npm install -g create-react-app
+2- create-react-app huntweb
