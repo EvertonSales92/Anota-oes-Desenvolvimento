@@ -1,0 +1,4 @@
+npm i -s redux react-redux redux-thunk
+
+
+ES7 React/Redux/GraphQL/React-Native snippetsd - Extenção VSCode 
